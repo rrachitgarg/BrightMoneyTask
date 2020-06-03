@@ -4,6 +4,7 @@ from django.core.mail import EmailMessage
 from django.conf import settings
 from pathlib import Path
 import os
+from .utility import analysed_data
 
 path = Path(__file__).parent.absolute()
 outfile_path = os.path.join(path, "..", "output.csv")
@@ -18,6 +19,7 @@ def mail_analysis_report():
     recipient_list = [
         "rachitg747@gmail.com",
     ]
+    analysed_data()
     output_file = open(outfile_path).read()
     email = EmailMessage(subject, message, email_from, recipient_list)
     email.attach("analysed_data.csv", output_file, "text/csv")

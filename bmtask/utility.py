@@ -10,7 +10,8 @@ outfile_path = os.path.join(path, "..", "output.csv")
 
 def analysed_data():
     ds = pd.read_csv(file_path)
-    with open(outfile_path, mode="w") as output_file:
+    mode = "a" if os.path.exists(outfile_path) else "w"
+    with open(outfile_path, mode) as output_file:
         out = csv.writer(output_file)
         out.writerow(["Parameter", "Count", "Churn", "Not Churn"])
 

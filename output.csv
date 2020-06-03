@@ -1,7 +1,0 @@
-Parameter,Count,Churn,Not Churn
-Customers who didn't renewed contracts,323,186,137
-Customers who recently renewed contracts,3010,2664,346
-Customers without data plan,2411,2008,403
-Customers with data plan,922,842,80
-Customers with 0 data usage,1813,1491,322
-Customers with data usage,1520,1359,161
