@@ -9,3 +9,9 @@ Hi there, i have created a basic automation application for data analysis using 
 -   `python manage.py runserver`
 -   Start your celery in a separate terminal
 -   `celery -A task worker -l info -B`
+
+
+## Note
+- Setup rabbitmq in your system
+  `brew install rabbitmq (for macos users)`
+- If using gmail account to send mails, allow less secure apps settings in your google account.
