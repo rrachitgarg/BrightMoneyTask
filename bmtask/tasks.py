@@ -9,7 +9,7 @@ path = Path(__file__).parent.absolute()
 outfile_path = os.path.join(path, "..", "output.csv")
 
 
-@periodic_task(run_every=(crontab(minute="*/1")), name="mail-report")
+@periodic_task(run_every=(crontab(minute="*/5")), name="mail-report")
 def mail_analysis_report():
 
     subject = "Mail by rachit"
