@@ -12,6 +12,6 @@ Hi there, i have created a basic automation application for data analysis using 
 
 
 ## Note
-- Setup rabbitmq in your system
-  `brew install rabbitmq (for macos users)`
+- Setup rabbitmq in your system (for macos users)
+  `brew install rabbitmq`
 - If using gmail account to send mails, allow less secure apps settings in your google account.
